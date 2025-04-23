@@ -15,29 +15,29 @@
                     <!-- <h3 style="margin-top: 0%; color: black;text-align: center;">User Regisgration</h3> -->
                     <p style="margin-left: 5px;">Full Name :</p> 
                     <div style="height: 20px;width: 250px; border-radius: 3px;background-color: azure;margin-left: 5px;margin-top:0px;">
-                        <input type="text"style="width: 100%;height:100%">
+                        <input type="text"style="width: 100%;height:100%" id="name">
                     </div>
 
                      <p style="margin-left: 5px;">Email Address :</p> 
 
                     <div style="height: 20px;width: 250px; border-radius: 3px;background-color: azure;margin-left: 5px;margin-top:0px;">
-                        <input type="text"style="width: 100%;height:100%">
+                        <input type="text"style="width: 100%;height:100%" id="email">
                     </div>
                       
                      <p style="margin-left: 5px;">User Password :</p> 
                      
                     <div style="height: 20px;width: 250px; border-radius: 10px;background-color: azure;margin-left: 5px;margin-top:0px;">
-                        <input type="password"style="width: 100%;height:100%;">
+                        <input type="password"style="width: 100%;height:100%;" id="password">
                     </div>
 
-                     <p style="margin-left: 5px;">User Password :</p> 
+                     <p style="margin-left: 5px;">Confirm User Password :</p> 
                      
                     <div style="height: 20px;width: 250px; border-radius: 10px;background-color: azure;margin-left: 5px;margin-top:0px;">
-                        <input type="password"style="width: 100%;height:100%;">
+                        <input type="password"style="width: 100%;height:100%;" id="confirmpass">
                     </div>
                       <p style="margin-left: 5px;">Date Of Birth :</p> 
                        <div style="height: 20px;width: 250px; border-radius: 3px;background-color: azure;margin-left: 5px;margin-top:0px;margin-bottom: 20px;">
-                        <input type="date"style="width: 100%;height:100%">
+                        <input type="date"style="width: 100%;height:100%" id="dob">
                     </div>
 
                     <label for="country" >Choose Country:</label>
@@ -48,13 +48,14 @@
                         <option value="Qater">Qater</option>
                         <option value="America">America</option>
                       </select>
-                  <button> Confirm</button>
-                </div>
+                  <!-- <button> Confirm</button> -->
+                   <div class="button" style="height:100px;width:100%; margin-top: 10px;display:flex;justify-content: center;align-items: center;">
+                    <button style="height: 40px;width:80px;color:black;font-weight: 600;background-color: skyblue;"> Confirm</button>
+                   </div>
+                </div>            
              </div>
-            
-
            </div>
     </div>
-  
+  <script src="Main.js"></script>
 </body>
 </html>
