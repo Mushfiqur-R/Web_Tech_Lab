@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <div style="display: flex;height:1000px; width:1000px ;justify-content: center; align-items: center ;flex-direction: column; ">
+    <div style="display: flex;height:max-content; width:1000px ;justify-content: center; align-items: center ;flex-direction: column; ">
            <div style="height: 100px;width: 100px; border-radius: 100px;background-color: red; "></div>
            <h2> User Regisgration</h2>
-           <div style="background-color: blueviolet;height: 500px; width:700px; display: flex; ">
-            <div style="height:500px;width:300px;background-color: bisque;display: flex;">
-                   <div style="height: 400px;width:400px; background-color: cadetblue;">
+           <div style="background-color: blueviolet;height: max-content; width:700px; display: flex; border-radius: 10px; ">
+             <form action="Process.php" method="POST" style="background-color: rgb(226, 43, 183);height: max-content; width:300px; display: flex;">
+               <div style="height: max-content;width:300px; background-color: cadetblue;" id="backgroundbox">
                     <!-- <h3 style="margin-top: 0%; color: black;text-align: center;">User Regisgration</h3> -->
                     <p style="margin-left: 5px;">Full Name :</p> 
                     <div style="height: 20px;width: 250px; border-radius: 3px;background-color: azure;margin-left: 5px;margin-top:0px;">
-                        <input type="text"style="width: 100%;height:100%" id="name">
+                        <input type="text"style="width: 100%;height:100%" id="name" name="name">
                     </div>
 
                      <p style="margin-left: 5px;">Email Address :</p> 
 
                     <div style="height: 20px;width: 250px; border-radius: 3px;background-color: azure;margin-left: 5px;margin-top:0px;">
-                        <input type="text"style="width: 100%;height:100%" id="email">
+                        <input type="text"style="width: 100%;height:100%" id="email" name="email">
                     </div>
                       
                      <p style="margin-left: 5px;">User Password :</p> 
@@ -48,13 +49,68 @@
                         <option value="Qater">Qater</option>
                         <option value="America">America</option>
                       </select>
-                  <!-- <button> Confirm</button> -->
-                   <div class="button" style="height:100px;width:100%; margin-top: 10px;display:flex;justify-content: center;align-items: center;">
+                    <!-- <button> Confirm</button> -->
+                    <p style="margin-left: 5px;">Pick a Color :</p> 
+                    <div style="height: 30px; width: 50px; border-radius: 5px; background-color: azure; margin-left: 2px; margin-top: 5px; display: flex; align-items: center; justify-content: center;">
+                     <input type="color" id="favcolor" name="favcolor" style="width: 100%; height: 100%; border: none; background: none; cursor: pointer;">
+                    </div>
+                   <p style="margin-left: 5px;">Select Gender:</p>
+                   <!-- <div style="margin-left: 5px;"> -->
+                  <input type="radio" id="male" name="gender" value="Male">
+                  <label for="male">Male</label>
+                  <input type="radio" id="female" name="gender" value="Female" style="margin-left: 10px;">
+                  <label for="female">Female</label>
+                 <div class="button" style="height:40px;width:100%; margin-top: 0px;display:flex;justify-content: center;align-items: center;margin-bottom: 0px;">
                     <button style="height: 40px;width:80px;color:black;font-weight: 600;background-color: skyblue;"> Confirm</button>
-                   </div>
-                </div>            
-             </div>
-           </div>
+                  </div>
+              <div style="height:max-content;width:300px;background-color: bisque;position: relative;z-index: 2;">
+                <h1>Sign Up</h1>
+                <div class="field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" />
+                <span class="error" id="emailError"></span>
+                </div>
+                <div class="field">
+                <label for="password">Password:</label>
+                <input type="password" id="password" />
+                <span class="error" id="passwordError"></span>
+                </div>
+               <button type="submit">Submit</button>
+
+                   <!-- </div> -->
+                   <!-- <div class="button" style="height:100px;width:100%; margin-top: 0px;display:flex;justify-content: center;align-items: center;">
+                    <button style="height: 40px;width:80px;color:black;font-weight: 600;background-color: skyblue;"> Confirm</button>
+                   </div> -->
+               </div>            
+            </div>
+          </form>
+          <!-- table start -->
+          <div class="table-container" style=" text-align: center; width: 400px;padding:10px;display:flex;justify-content: center;justify-items: center;flex-direction: column;">
+            <h1 style="color: white;">Air Quality Index</h1>
+            <table style="border: 2px solid black; border-collapse: collapse; width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Area Name</th>
+                        <th>Air Index</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Row 1</td><td>Data 1</td></tr>
+                    <tr><td>Row 2</td><td>Data 2</td></tr>
+                    <tr><td>Row 3</td><td>Data 3</td></tr>
+                    <tr><td>Row 4</td><td>Data 4</td></tr>
+                    <tr><td>Row 5</td><td>Data 5</td></tr>
+                    <tr><td>Row 6</td><td>Data 6</td></tr>
+                    <tr><td>Row 7</td><td>Data 7</td></tr>
+                    <tr><td>Row 8</td><td>Data 8</td></tr>
+                    <tr><td>Row 9</td><td>Data 9</td></tr>
+                    <tr><td>Row 10</td><td>Data 10</td></tr>
+                </tbody>
+            </table>
+        </div>
+          <!-- table end -->
+          </div>
+       </div>
     </div>
   <script src="Main.js"></script>
 </body>

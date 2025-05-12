@@ -5,12 +5,17 @@ const password = document.getElementById('password');
 const confirmpassword = document.getElementById('confirmpass');
 const country = document.getElementById('country');
 const dob = document.getElementById("dob");
+const favcolor = document.getElementById("favcolor");
 
 const nameregx = /^[A-Za-z]+$/
 const emailregx = /^\d{2}-\d{5}-\d@student\.aiub\.edu$/;
 const passwordregx = /^[A-Za-z0-9]{8,}$/;
 // const passwordlength = /^.{8,}$/;
+const backgroundbox = document.getElementById("backgroundbox");
 
+favcolor.addEventListener("input", function() {
+    backgroundbox.style.backgroundColor = this.value;
+});
 button.addEventListener("click", () => {
     const inputname = name.value.trim();
     const inputemail = email.value;
@@ -35,6 +40,8 @@ button.addEventListener("click", () => {
         alert("Please select a country!");
         return;
     }
+
+   
 
 const dobValue = new Date(dob.value);
 const today = new Date();
