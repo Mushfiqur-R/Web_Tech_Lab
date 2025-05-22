@@ -7,38 +7,38 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <div style="display: flex;height:max-content; width:1000px ;justify-content: center; align-items: center ;flex-direction: column; ">
+    <div style="display: flex;height:max-content; width:100vw ;justify-content: center; align-items: center ;flex-direction: column; ">
            <div style="height: 100px;width: 100px; border-radius: 100px;background-color: red; "></div>
            <h2> User Regisgration</h2>
-           <div style="background-color: blueviolet;height: max-content; width:700px; display: flex; border-radius: 10px; ">
-             <form action="Process.php" method="POST" style="background-color: rgb(226, 43, 183);height: max-content; width:300px; display: flex;">
-               <div style="height: max-content;width:300px; background-color: cadetblue;" id="backgroundbox">
+           <div style="height: max-content; width:700px; display: flex; border-radius: 10px; " class="purple-box">
+             <form action="Process.php" method="POST" style="background-color: green;height: max-content; width:300px; display: flex;border: 1px transparent ;border-radius: 12px;" class="upper-box">
+               <div style="height: max-content;width:300px; background-color: 00BDFE" id="backgroundbox;">
                     <!-- <h3 style="margin-top: 0%; color: black;text-align: center;">User Regisgration</h3> -->
                     <p style="margin-left: 5px;">Full Name :</p> 
-                    <div style="height: 20px;width: 250px; border-radius: 3px;background-color: azure;margin-left: 5px;margin-top:0px;">
+                    <div style="height: 20px;width: 250px; border-radius: 3px;margin-left: 5px;margin-top:0px;" >
                         <input type="text"style="width: 100%;height:100%" id="name" name="name">
                     </div>
 
                      <p style="margin-left: 5px;">Email Address :</p> 
 
-                    <div style="height: 20px;width: 250px; border-radius: 3px;background-color: azure;margin-left: 5px;margin-top:0px;">
+                    <div style="height: 20px;width: 250px; border-radius: 3px;margin-left: 5px;margin-top:0px;">
                         <input type="text"style="width: 100%;height:100%" id="email" name="email">
                     </div>
                       
                      <p style="margin-left: 5px;">User Password :</p> 
                      
-                    <div style="height: 20px;width: 250px; border-radius: 10px;background-color: azure;margin-left: 5px;margin-top:0px;">
-                        <input type="password"style="width: 100%;height:100%;" id="password">
+                    <div style="height: 20px;width: 250px; border-radius: 10px;margin-left: 5px;margin-top:0px;">
+                        <input type="password"style="width: 100%;height:100%;" id="password" name="password">
                     </div>
 
                      <p style="margin-left: 5px;">Confirm User Password :</p> 
                      
                     <div style="height: 20px;width: 250px; border-radius: 10px;background-color: azure;margin-left: 5px;margin-top:0px;">
-                        <input type="password"style="width: 100%;height:100%;" id="confirmpass">
+                        <input type="password"style="width: 100%;height:100%;" id="confirmpass" name="password">
                     </div>
                       <p style="margin-left: 5px;">Date Of Birth :</p> 
-                       <div style="height: 20px;width: 250px; border-radius: 3px;background-color: azure;margin-left: 5px;margin-top:0px;margin-bottom: 20px;">
-                        <input type="date"style="width: 100%;height:100%" id="dob">
+                       <div style="height: 20px;width: 250px; border-radius: 3px;margin-left: 5px;margin-top:0px;margin-bottom: 20px;">
+                        <input type="date"style="width: 100%;height:100%" id="dob" name="dob">
                     </div>
 
                     <label for="country" >Choose Country:</label>
@@ -63,20 +63,24 @@
                  <div class="button" style="height:40px;width:100%; margin-top: 0px;display:flex;justify-content: center;align-items: center;margin-bottom: 0px;">
                     <button style="height: 40px;width:80px;color:black;font-weight: 600;background-color: skyblue;"> Confirm</button>
                   </div>
-              <div style="height:max-content;width:300px;background-color: bisque;position: relative;z-index: 2;">
-                <h1>Sign Up</h1>
-                <div class="field">
+              <div style="height:max-content;width:300px;background-color: bisque;position: relative;z-index: 2;" class="signup-box">
+                <h1 style="text-align: center;color: aliceblue;">Sign Up</h1>
+                <form action="requestaqi.php">
+                
                 <label for="email">Email:</label>
+                <div class="field">
                 <input type="email" id="email" />
                 <span class="error" id="emailError"></span>
                 </div>
-                <div class="field">
+              
                 <label for="password">Password:</label>
+                <div class="field">
                 <input type="password" id="password" />
                 <span class="error" id="passwordError"></span>
                 </div>
+              </form>
                <button type="submit">Submit</button>
-
+              
                    <!-- </div> -->
                    <!-- <div class="button" style="height:100px;width:100%; margin-top: 0px;display:flex;justify-content: center;align-items: center;">
                     <button style="height: 40px;width:80px;color:black;font-weight: 600;background-color: skyblue;"> Confirm</button>

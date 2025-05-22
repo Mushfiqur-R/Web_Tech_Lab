@@ -1,5 +1,32 @@
+body {
+  background: linear-gradient(to bottom, #a3dfff, #e6f7ff);
+}
 td,
 th {
   border: 1px solid black;
   padding: 5px;
+  background: linear-gradient(135deg, skyblue, white);
+}
+input {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-weight: 200;
+  outline: none;
+  padding: 5px;
+}
+p {
+  font-weight: 400;
+}
+.purple-box {
+  background: linear-gradient(to bottom, #0077be, #00c6ff);
+}
+form {
+  background: linear-gradient(to bottom, #006aa3, #00b3e6);
+}
+.signup-box {
+  background: linear-gradient(to bottom, #00557a, #009ac1);
+}
+.Field {
+  display: flex;
 }
