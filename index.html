@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Air Quality Index</title>
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <div style="display: flex;height:max-content; width:100vw ;justify-content: center; align-items: center ;flex-direction: column; ">
-           <div style="height: 100px;width: 100px; border-radius: 100px;background-color: red; "></div>
-           <h2> User Regisgration</h2>
+           <div style="height: 100px;width: 100px; border-radius: 100px;background-color: blue; "></div>
+           <h2> AQI</h2>
            <div style="height: max-content; width:700px; display: flex; border-radius: 10px; " class="purple-box">
              <form action="Process.php" method="POST" style="background-color: green;height: max-content; width:300px; display: flex;border: 1px transparent ;border-radius: 12px;" class="upper-box">
                <div style="height: max-content;width:300px; background-color: 00BDFE" id="backgroundbox;">
@@ -63,23 +63,25 @@
                  <div class="button" style="height:40px;width:100%; margin-top: 0px;display:flex;justify-content: center;align-items: center;margin-bottom: 0px;">
                     <button style="height: 40px;width:80px;color:black;font-weight: 600;background-color: skyblue;"> Confirm</button>
                   </div>
+                  </form>
               <div style="height:max-content;width:300px;background-color: bisque;position: relative;z-index: 2;" class="signup-box">
                 <h1 style="text-align: center;color: aliceblue;">Sign Up</h1>
-                <form action="requestaqi.php">
+                <form action="index.php" method="post" style="height:max-content;width:300px;" class="signup-box">
                 
                 <label for="email">Email:</label>
                 <div class="field">
-                <input type="email" id="email" />
+                <input type="email" id="email" name="loginemail" />
                 <span class="error" id="emailError"></span>
                 </div>
               
                 <label for="password">Password:</label>
                 <div class="field">
-                <input type="password" id="password" />
+                <input type="password" id="password" name="loginpassword"/>
                 <span class="error" id="passwordError"></span>
                 </div>
+                <button type="submit" name="loginsubmit">Submit</button>
               </form>
-               <button type="submit">Submit</button>
+         
               
                    <!-- </div> -->
                    <!-- <div class="button" style="height:100px;width:100%; margin-top: 0px;display:flex;justify-content: center;align-items: center;">
@@ -87,7 +89,7 @@
                    </div> -->
                </div>            
             </div>
-          </form>
+          
           <!-- table start -->
           <div class="table-container" style=" text-align: center; width: 400px;padding:10px;display:flex;justify-content: center;justify-items: center;flex-direction: column;">
             <h1 style="color: white;">Air Quality Index</h1>
